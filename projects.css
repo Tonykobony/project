@@ -129,3 +129,30 @@ body {
     text-align:center;
     top:10%;
 }
+/* Default = Mobile first */
+body {
+  font-size: 16px;
+  padding: 10px;
+}
+
+/* Tablet: 768px and up */
+@media (min-width: 768px) {
+  body {
+    font-size: 18px;
+    padding: 20px;
+  }
+  .navbar {
+    flex-direction: row;
+  }
+}
+
+/* Desktop: 1024px and up */
+@media (min-width: 1024px) {
+  body {
+    font-size: 20px;
+    padding: 40px;
+  }
+  .cards {
+    grid-template-columns: repeat(4, 1fr); /* 4 columns on desktop */
+  }
+}
