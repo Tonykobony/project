@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navigation {
+    border: 3px solid blue;
+    background-color: blueviolet;
+    height: 100px;
+    position: sticky;
+    top: 0;
+    border-radius: 12px;
+}
+.navigation a{
+    text-decoration: none;
+    color: black;
+    font-size: 17px;
+    font-family:Arial, Helvetica, sans-serif;
+    justify-content: space-evenly;
+    float:left;
+    text-align:center;
+    padding:14px 16px;
+
+}
+.navigation a:hover{
+    background-color: white;
+    color:black;
+    cursor: pointer;
+}
+.navigation ul{
+    justify-content:space-evenly;
+    height: 100%;
+    list-style: none;
+    padding: 14px;
+    display:flex;
+}
+
+body {
+    background-color: darkgreen;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+
+}
+/* Hero Section */
+.hero-image{
+    display:flex;
+    justify-content: space-between;
+     align-items: center;
+    padding: 50px;
+    gap: 40px;
+}
+/* TEXT - CENTER */
+.hero-text{
+    flex: 1;
+    text-align: center;
+}
+
+.name{
+    color: black;
+    font-size: 35px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.content {
+    color: black;
+    font-size: 20px;
+    line-height: 1.6; 
+}
+/* BUTTONS */
+.bt,
+.nt{
+    padding: 12px 20px;
+    margin: 15px 10px 0;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+}
+ .bt:hover,
+.nt:hover{
+    background-color: blue;
+    color: black;
+    box-shadow: 0 0 25px blue;
+    transform: scale(1.05);
+}
+/* IMAGE - RIGHT */
+img{
+    width: 250px;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid blue;
+}
+
+
+.site-footer{
+    color:black;
+    text-align:center;
+    padding:30px 20px;
+    margin-top: 50px;
+    top:10%;
+}
+.social-links{
+    display:flex;
+    justify-content: space-evenly;
+    gap: 2opx;
+    flex-wrap: wrap;
+
+}
+.social-links a{
+    color:black;
+    text-decoration:none;
+    font-weight:500;
+    transition: color 0.3s;
+    justify-content: space-evenly;
+}
+.social-links a:hover{
+    color:blue;
+    text-decoration:underlined;
+}
+.footer-content{
+    top:10%;
+    left:50%;
+    text-align: center;
+    color:black;
+    font-size: larger;
+    font-weight: 600;
+}
+.btn:hover{
+    color:blue;
+    cursor:pointer;
+}  
+/* VIDEO - LEFT */
+video{
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+}
