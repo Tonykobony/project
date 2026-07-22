@@ -16,10 +16,8 @@
     color: black;
     font-size: 17px;
     font-family:Arial, Helvetica, sans-serif;
-    justify-content: space-evenly;
-    float:left;
     text-align:center;
-    padding:14px 16px;
+    padding:12px 20px;
 
 }
 .navigation a:hover{
@@ -28,11 +26,12 @@
     cursor: pointer;
 }
 .navigation ul{
-    justify-content:space-evenly;
-    height: 100%;
-    list-style: none;
-    padding: 14px;
     display:flex;
+    justify-content:center;
+    align-items:center;
+    list-style:none;
+    gap:30px;
+    height:100%;
 }
 
 body {
@@ -49,6 +48,7 @@ body {
     display:flex;
     justify-content: space-between;
      align-items: center;
+    flex-wrap: wrap;
     padding: 50px;
     gap: 40px;
 }
@@ -88,8 +88,9 @@ body {
 }
 /* IMAGE - RIGHT */
 img{
-    width: 250px;
-    height: 260px;
+    width: 100%;
+    max-width: 280px;
+    height: auto;
     object-fit: cover;
     border-radius: 50%;
     border: 5px solid blue;
@@ -135,25 +136,85 @@ img{
 }  
 /* VIDEO - LEFT */
 video{
-    width: 300px;
+    width: 100%;
+    max-width:400px;
     height: auto;
     border-radius: 10px;
 }
 /* Default = Mobile first */
-body {
-  font-size: 16px;
-  padding: 10px;
+@media (max-width:480px){
+
+.name{
+    font-size:22px;
+}
+
+.content{
+    font-size:16px;
+}
+
+.navigation a{
+    font-size:16px;
+}
+
+img{
+    max-width:180px;
+}
+
+video{
+    max-width:100%;
+}
+
+.social-links{
+    flex-direction:column;
+    gap:15px;
 }
 
 /* Tablet: 768px and up */
-@media (min-width: 768px) {
-  body {
-    font-size: 18px;
-    padding: 20px;
-  }
-  .navbar {
-    flex-direction: row;
-  }
+@media (max-width:768px){
+
+.navigation{
+    height:auto;
+    padding:15px;
+}
+
+.navigation ul{
+    flex-direction:column;
+    gap:10px;
+}
+
+.hero-image{
+    flex-direction:column;
+    text-align:center;
+    padding:20px;
+}
+
+.hero-text{
+    order:2;
+}
+
+video{
+    order:1;
+}
+
+img{
+    order:3;
+}
+
+.name{
+    font-size:28px;
+}
+
+.content{
+    font-size:18px;
+}
+
+.bt,
+.nt{
+    width:100%;
+    margin-top:15px;
+}
+}
+
 }
 
 /* Desktop: 1024px and up */
